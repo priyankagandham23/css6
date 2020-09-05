@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactUs</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+                form{
+            margin:80px;
+        }
+       input[type="text"],[type="password"]{
+           border:none;
+           outline:none;
+           
+           border-bottom:1px solid orange;
+       }
+        form > div {
+  position: relative;
+}
+form > div > label {
+  position: absolute;
+}
+form.go-bottom label {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.2s;
+  transform:translate(0px,-15px);
+}
+form.go-bottom input:focus + label{
+    top: 100%;
+  margin-top: -40px;
+  
+}
+.n1{
+    margin-left:170px;
+}
+input[type="submit"]{
+    color:chartreuse;
+}
+ form input:valid{
+    margin-top: -40px;
+     background: white;
+     transform: translate(0,3) scale(.8);
+ } 
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li>
+            <a href="">Home</a>
+        </li>
+        <li>
+            <a href="about.html">Aboutus</a>
+        </li>
+        <li>
+            <a href="">Gallery</a>
+            
+        </li>
+        <li>
+            <a href="">ContactUs</a>
+        </li>
+    </ul>
+<div>
+
+
+    <form action="" class="go-bottom">
+        <div >
+            <input id="name" name="name" type="text" required>
+            <label for="name">Your Name</label>
+            <input id="n1" name="name" type="text" required>
+            <label class="n1" for="n1">Lastname</label>
+        
+    </div>
+        <button>Submit</button>
+        </form>
+        
+</body>
+</html>
